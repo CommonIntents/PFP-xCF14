@@ -159,6 +159,19 @@ The official Rust reference implementation is maintained in BIND-19:
 
 ---
 
+## Design Inspiration (Inspired by)
+
+PFP-xCF14 is an **independent implementation**, but its design philosophy is **inspired by** mature infrastructure projects:
+
+- **EtherType (IEEE 802.3, 40+ years)**: 2-byte fixed-offset protocol identifier → PFP `Family-Magic` (0xCF14)
+- **CAN Bus (ISO 11898, 30+ years)**: Fixed-offset priority field → PFP `Risk-Level` priority
+
+> "Inspired by" means: we learned the design ideas, implemented independently. Ideas are not copyrightable; this is open-source etiquette, not a legal obligation.
+
+See the full conceptual isomorphism table in [BIND-19 README Appendix](https://github.com/CommonIntents/BIND-19#appendix-design-inspiration--conceptual-isomorphism-inspired-by).
+
+---
+
 ## License
 
 Apache 2.0 — see [LICENSE](LICENSE).
